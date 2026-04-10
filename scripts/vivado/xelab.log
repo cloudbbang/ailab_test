@@ -1,0 +1,19 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_fp16_mac -timescale 1ns/1ps -debug typical -s sim_snapshot 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.s80_pkg
+Compiling module work.fp16_unpack
+Compiling module work.dsp48_mul_wrapper
+Compiling module work.fp32_accumulator
+Compiling module work.fp32_normalizer
+Compiling module work.fp16_mac
+Compiling module work.tb_fp16_mac
+Built simulation snapshot sim_snapshot

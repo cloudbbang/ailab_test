@@ -2,7 +2,18 @@
   "permissions": {
     "allow": [
       "mcp__serena__list_dir",
-      "mcp__serena__activate_project"
+      "mcp__serena__activate_project",
+      "mcp__deep-research__deep_research",
+      "WebSearch",
+      "Bash(ls \"C:/AMDDesignTools/2025.2/Vivado/bin/xsim\"*)",
+      "Bash(ls \"C:/AMDDesignTools/2025.2/Vivado/bin/xvlog\"*)",
+      "Bash(ls \"C:/AMDDesignTools/2025.2/Vivado/bin/xelab\"*)",
+      "Bash(ls \"C:/AMDDesignTools/2025.2/Vivado/bin/vivado\"*)",
+      "Bash(\"C:/AMDDesignTools/2025.2/Vivado/bin/xvlog.bat\" -sv -d FPGA ../../rtl/common/s80_pkg.sv ../../rtl/common/fp16_unpack.sv ../../rtl/common/fp16_pack.sv ../../rtl/common/dsp48_mul_wrapper.sv ../../rtl/common/fp32_accumulator.sv ../../rtl/common/fp32_normalizer.sv ../../rtl/common/fp16_mac.sv ../../tb/m1/tb_fp16_mac.sv)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(gh api:*)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:github.com)"
     ]
   }
 }

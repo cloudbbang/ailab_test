@@ -1,0 +1,13 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+C:/AMDDesignTools/2025.2/data/verilog/src/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+D:/_program/_aitest/ailab_test/rtl/common/dsp48_mul_wrapper.sv,1774418737,systemVerilog,,D:/_program/_aitest/ailab_test/rtl/common/fp32_accumulator.sv,,dsp48_mul_wrapper,,,,,,,,
+D:/_program/_aitest/ailab_test/rtl/common/fp16_mac.sv,1774418838,systemVerilog,,D:/_program/_aitest/ailab_test/tb/m1/tb_fp16_mac.sv,,fp16_mac,,,,,,,,
+D:/_program/_aitest/ailab_test/rtl/common/fp16_pack.sv,1774418705,systemVerilog,,D:/_program/_aitest/ailab_test/rtl/common/dsp48_mul_wrapper.sv,,fp16_pack,,,,,,,,
+D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv,1774418694,systemVerilog,,D:/_program/_aitest/ailab_test/rtl/common/fp16_pack.sv,,fp16_unpack,,,,,,,,
+D:/_program/_aitest/ailab_test/rtl/common/fp32_accumulator.sv,1774420759,systemVerilog,,D:/_program/_aitest/ailab_test/rtl/common/fp32_normalizer.sv,,fp32_accumulator,,,,,,,,
+D:/_program/_aitest/ailab_test/rtl/common/fp32_normalizer.sv,1774418801,systemVerilog,,D:/_program/_aitest/ailab_test/rtl/common/fp16_mac.sv,,fp32_normalizer,,,,,,,,
+D:/_program/_aitest/ailab_test/rtl/common/s80_pkg.sv,1774418481,systemVerilog,D:/_program/_aitest/ailab_test/rtl/common/dsp48_mul_wrapper.sv;D:/_program/_aitest/ailab_test/rtl/common/fp16_mac.sv;D:/_program/_aitest/ailab_test/rtl/common/fp16_pack.sv;D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv;D:/_program/_aitest/ailab_test/rtl/common/fp32_accumulator.sv;D:/_program/_aitest/ailab_test/rtl/common/fp32_normalizer.sv,D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv,,s80_pkg,,,,,,,,
+D:/_program/_aitest/ailab_test/tb/m1/tb_fp16_mac.sv,1774420501,systemVerilog,,,,tb_fp16_mac,,,,,,,,

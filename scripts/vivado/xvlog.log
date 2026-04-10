@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_program/_aitest/ailab_test/rtl/common/s80_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv" into library work
+INFO: [VRFC 10-311] analyzing module fp16_unpack
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_program/_aitest/ailab_test/rtl/common/fp16_pack.sv" into library work
+INFO: [VRFC 10-311] analyzing module fp16_pack
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_program/_aitest/ailab_test/rtl/common/dsp48_mul_wrapper.sv" into library work
+INFO: [VRFC 10-311] analyzing module dsp48_mul_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_program/_aitest/ailab_test/rtl/common/fp32_accumulator.sv" into library work
+INFO: [VRFC 10-311] analyzing module fp32_accumulator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_program/_aitest/ailab_test/rtl/common/fp32_normalizer.sv" into library work
+INFO: [VRFC 10-311] analyzing module fp32_normalizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_program/_aitest/ailab_test/rtl/common/fp16_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module fp16_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_program/_aitest/ailab_test/tb/m1/tb_fp16_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_fp16_mac

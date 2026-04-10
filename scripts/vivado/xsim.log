@@ -1,0 +1,136 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Mar 25 15:57:55 2026
+# Process ID         : 35504
+# Current directory  : D:/_program/_aitest/ailab_test/scripts/vivado
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/sim_snapshot/xsim_script.tcl}
+# Log file           : D:/_program/_aitest/ailab_test/scripts/vivado/xsim.log
+# Journal file       : D:/_program/_aitest/ailab_test/scripts/vivado\xsim.jou
+# Running On         : DESKTOP-U7HJ1LV
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900
+# CPU Frequency      : 1997 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 68482 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 81367 MB
+# Available Virtual  : 34824 MB
+#-----------------------------------------------------------
+source xsim.dir/sim_snapshot/xsim_script.tcl
+# xsim {sim_snapshot} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+==============================================
+  S80 FP16 MAC Testbench - xsim
+  Arithmetic Contract v1.0
+==============================================
+
+
+Time: 0 fs Started: 0 fs Scope: /tb_fp16_mac/u_dut/u_unpack_a File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:78
+Error: Normal number missing implicit 1
+Time: 0 ps  Iteration: 3  Process: /tb_fp16_mac/u_dut/u_unpack_a//tb_fp16_mac/u_dut/u_unpack_a  Scope: tb_fp16_mac.u_dut.u_unpack_a  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 79
+
+Time: 0 fs Started: 0 fs Scope: /tb_fp16_mac/u_dut/u_unpack_b File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:78
+Error: Normal number missing implicit 1
+Time: 0 ps  Iteration: 3  Process: /tb_fp16_mac/u_dut/u_unpack_b//tb_fp16_mac/u_dut/u_unpack_b  Scope: tb_fp16_mac.u_dut.u_unpack_b  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 79
+
+Time: 0 fs Started: 0 fs Scope: /tb_fp16_mac/u_dut/u_unpack_a File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:74
+Error: Zero with non-zero mantissa
+Time: 0 ps  Iteration: 3  Process: /tb_fp16_mac/u_dut/u_unpack_a//tb_fp16_mac/u_dut/u_unpack_a  Scope: tb_fp16_mac.u_dut.u_unpack_a  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 75
+
+Time: 0 fs Started: 0 fs Scope: /tb_fp16_mac/u_dut/u_unpack_b File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:74
+Error: Zero with non-zero mantissa
+Time: 0 ps  Iteration: 3  Process: /tb_fp16_mac/u_dut/u_unpack_b//tb_fp16_mac/u_dut/u_unpack_b  Scope: tb_fp16_mac.u_dut.u_unpack_b  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 75
+--- Group 1: Basic Single Multiply ---
+
+Time: 85 ns Started: 85 ns Scope: /tb_fp16_mac/u_dut/u_unpack_a File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:78
+Error: Normal number missing implicit 1
+Time: 85 ns  Iteration: 2  Process: /tb_fp16_mac/u_dut/u_unpack_a//tb_fp16_mac/u_dut/u_unpack_a  Scope: tb_fp16_mac.u_dut.u_unpack_a  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 79
+
+Time: 85 ns Started: 85 ns Scope: /tb_fp16_mac/u_dut/u_unpack_b File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:78
+Error: Normal number missing implicit 1
+Time: 85 ns  Iteration: 2  Process: /tb_fp16_mac/u_dut/u_unpack_b//tb_fp16_mac/u_dut/u_unpack_b  Scope: tb_fp16_mac.u_dut.u_unpack_b  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 79
+[ACC_INIT @125000] prod_mant=0x100000 msb=20 fp32_mant=0x800000 fp32_exp=127 → acc_mant=0x0800000
+PASS [1] 1.0 * 1.0 = 1.0: result=1.000000 (0x3f800000), expected=1.000000 (0x3f800000), ULP=0
+[ACC_INIT @205000] prod_mant=0x180000 msb=20 fp32_mant=0xc00000 fp32_exp=129 → acc_mant=0x0c00000
+PASS [2] 2.0 * 3.0 = 6.0: result=6.000000 (0x40c00000), expected=6.000000 (0x40c00000), ULP=0
+[ACC_INIT @285000] prod_mant=0x100000 msb=20 fp32_mant=0x800000 fp32_exp=127 → acc_mant=0x0800000
+PASS [3] -1.0 * 1.0 = -1.0: result=-1.000000 (0xbf800000), expected=-1.000000 (0xbf800000), ULP=0
+[ACC_INIT @365000] prod_mant=0x100000 msb=20 fp32_mant=0x800000 fp32_exp=127 → acc_mant=0x0800000
+PASS [4] 0.5 * 2.0 = 1.0: result=1.000000 (0x3f800000), expected=1.000000 (0x3f800000), ULP=0
+
+--- Group 2: Special Values ---
+
+Time: 405 ns Started: 405 ns Scope: /tb_fp16_mac/u_dut/u_unpack_a File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:74
+Error: Zero with non-zero mantissa
+Time: 405 ns  Iteration: 2  Process: /tb_fp16_mac/u_dut/u_unpack_a//tb_fp16_mac/u_dut/u_unpack_a  Scope: tb_fp16_mac.u_dut.u_unpack_a  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 75
+PASS [5] 0 * 1 = 0: zero result (0x00000000)
+
+Time: 485 ns Started: 485 ns Scope: /tb_fp16_mac/u_dut/u_unpack_b File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:74
+Error: Zero with non-zero mantissa
+Time: 485 ns  Iteration: 2  Process: /tb_fp16_mac/u_dut/u_unpack_b//tb_fp16_mac/u_dut/u_unpack_b  Scope: tb_fp16_mac.u_dut.u_unpack_b  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 75
+
+Time: 485 ns Started: 485 ns Scope: /tb_fp16_mac/u_dut/u_unpack_a File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:78
+Error: Normal number missing implicit 1
+Time: 485 ns  Iteration: 2  Process: /tb_fp16_mac/u_dut/u_unpack_a//tb_fp16_mac/u_dut/u_unpack_a  Scope: tb_fp16_mac.u_dut.u_unpack_a  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 79
+PASS [6] 1 * 0 = 0: zero result (0x00000000)
+
+Time: 565 ns Started: 565 ns Scope: /tb_fp16_mac/u_dut/u_unpack_a File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:74
+Error: Zero with non-zero mantissa
+Time: 565 ns  Iteration: 2  Process: /tb_fp16_mac/u_dut/u_unpack_a//tb_fp16_mac/u_dut/u_unpack_a  Scope: tb_fp16_mac.u_dut.u_unpack_a  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 75
+
+Time: 565 ns Started: 565 ns Scope: /tb_fp16_mac/u_dut/u_unpack_b File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:78
+Error: Normal number missing implicit 1
+Time: 565 ns  Iteration: 2  Process: /tb_fp16_mac/u_dut/u_unpack_b//tb_fp16_mac/u_dut/u_unpack_b  Scope: tb_fp16_mac.u_dut.u_unpack_b  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 79
+PASS [7] -0 * 1 = 0: zero result (0x00000000)
+PASS [8] NaN * 1 = NaN: NaN detected (0x7fc00000)
+
+Time: 725 ns Started: 725 ns Scope: /tb_fp16_mac/u_dut/u_unpack_a File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:78
+Error: Normal number missing implicit 1
+Time: 725 ns  Iteration: 2  Process: /tb_fp16_mac/u_dut/u_unpack_a//tb_fp16_mac/u_dut/u_unpack_a  Scope: tb_fp16_mac.u_dut.u_unpack_a  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 79
+PASS [9] 1 * NaN = NaN: NaN detected (0x7fc00000)
+
+Time: 805 ns Started: 805 ns Scope: /tb_fp16_mac/u_dut/u_unpack_a File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:70
+Error: FTZ violation: subnormal not flushed to zero
+Time: 805 ns  Iteration: 2  Process: /tb_fp16_mac/u_dut/u_unpack_a//tb_fp16_mac/u_dut/u_unpack_a  Scope: tb_fp16_mac.u_dut.u_unpack_a  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 71
+
+Time: 805 ns Started: 805 ns Scope: /tb_fp16_mac/u_dut/u_unpack_a File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:74
+Error: Zero with non-zero mantissa
+Time: 805 ns  Iteration: 2  Process: /tb_fp16_mac/u_dut/u_unpack_a//tb_fp16_mac/u_dut/u_unpack_a  Scope: tb_fp16_mac.u_dut.u_unpack_a  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 75
+
+Time: 805 ns Started: 805 ns Scope: /tb_fp16_mac/u_dut/u_unpack_b File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:78
+Error: Normal number missing implicit 1
+Time: 805 ns  Iteration: 2  Process: /tb_fp16_mac/u_dut/u_unpack_b//tb_fp16_mac/u_dut/u_unpack_b  Scope: tb_fp16_mac.u_dut.u_unpack_b  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 79
+PASS [10] subnorm * 1 = 0 (FTZ): zero result (0x00000000)
+
+--- Group 3: Accumulation ---
+
+Time: 885 ns Started: 885 ns Scope: /tb_fp16_mac/u_dut/u_unpack_a File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line:78
+Error: Normal number missing implicit 1
+Time: 885 ns  Iteration: 2  Process: /tb_fp16_mac/u_dut/u_unpack_a//tb_fp16_mac/u_dut/u_unpack_a  Scope: tb_fp16_mac.u_dut.u_unpack_a  File: D:/_program/_aitest/ailab_test/rtl/common/fp16_unpack.sv Line: 79
+[ACC_INIT @925000] prod_mant=0x100000 msb=20 fp32_mant=0x800000 fp32_exp=127 → acc_mant=0x0800000
+[ACC @935000] prod: sign=0 exp=15 mant=0x100000 | fp32: exp=127 mant=0x800000
+[ACC @935000] acc:  sign=0 exp=127 mant=0x0800000 zero=0
+[ACC @935000] diff=0 aligned_a=0x0800000 aligned_b=0x0800000
+[ACC @935000] result: sign=0 exp=127 mant_wide=0x1000000
+PASS [11] 1*1 + 1*1 = 2.0: result=2.000000 (0x40000000), expected=2.000000 (0x40000000), ULP=0
+[ACC_INIT @1015000] prod_mant=0x100000 msb=20 fp32_mant=0x800000 fp32_exp=129 → acc_mant=0x0800000
+[ACC @1025000] prod: sign=1 exp=15 mant=0x100000 | fp32: exp=127 mant=0x800000
+[ACC @1025000] acc:  sign=0 exp=129 mant=0x0800000 zero=0
+[ACC @1025000] diff=-2 aligned_a=0x0800000 aligned_b=0x0200000
+[ACC @1025000] result: sign=0 exp=129 mant_wide=0x0600000
+FAIL [12] 2*3 + (-1)*1 = 5.0: result=3.000000 (0x40400000), expected=5.000000 (0x40a00000), ULP=6291456 > 2
+
+==============================================
+  Results: 11 PASSED, 1 FAILED out of 12 tests
+==============================================
+  >>> SOME TESTS FAILED <<<
+
+$finish called at time : 1045 ns : File "D:/_program/_aitest/ailab_test/tb/m1/tb_fp16_mac.sv" Line 375
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Mar 25 15:57:57 2026...

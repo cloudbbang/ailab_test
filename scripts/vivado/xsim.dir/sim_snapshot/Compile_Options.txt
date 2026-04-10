@@ -1,0 +1,1 @@
+"tb_fp16_mac" -timescale "1ns/1ps" -debug "typical" -s "sim_snapshot" 
